@@ -1,0 +1,16 @@
+model_name,imagenet_accuracy,training_data,model_type,perspective_accuracy,depth_accuracy,perspective_accuracy_human,depth_accuracy_human,view_exp_accuracy
+caformer_s36.sail_in22k_ft_in1k,85.79,ImageNet 1k,Transformer,82.32848233,88.83684621,86.17021277,81.91489362,52.5
+cait_s24_224.fb_dist_in1k,83.442,ImageNet 1k,Transformer,67.87941788,85.67525371,70.21276596,81.91489362,57.5
+coat_small.in1k,82.362,ImageNet 1k,Transformer,61.66839917,89.14910226,58.5106383,84.04255319,60
+coatnet_bn_0_rw_224.sw_in1k,82.4,ImageNet 1k,Transformer,63.95530146,88.17330211,68.08510638,84.04255319,57.5
+deit3_base_patch16_224.fb_in22k_ft_in1k,85.7,ImageNet21k,Transformer,69.04885655,89.26619828,68.08510638,79.78723404,65
+dla102.in1k,78.024,ImageNet 1k,Transformer,61.0966736,86.61202186,69.14893617,81.91489362,32.5
+hrnet_w44.ms_in1k,78.894,ImageNet 1k,Transformer,69.17879418,86.14363778,69.14893617,78.72340426,57.5
+pit_xs_distilled_224.in1k,79.18,ImageNet 1k,Transformer,57.92619543,85.6362217,56.38297872,85.10638298,60
+poolformer_s12.sail_in1k,77.24,ImageNet 1k,Transformer,57.25051975,85.67525371,62.76595745,81.91489362,45
+repvgg_b2.rvgg_in1k,78.792,ImageNet 1k,CNN,66.63201663,86.10460578,71.27659574,79.78723404,47.5
+resnetrs50.tf_in1k,79.894,ImageNet 1k,CNN,60.52494802,86.29976581,58.5106383,82.9787234,47.5
+visformer_tiny.in1k,78.16,ImageNet 1k,Transformer,58.31600832,86.57298985,67.0212766,84.04255319,52.5
+vit_large_r50_s32_384.augreg_in21k_ft_in1k,86.182,ImageNet21k,Transformer,84.3035343,88.29039813,88.29787234,84.04255319,57.5
+volo_d3_224.sail_in1k,85.414,ImageNet 1k,CNN,69.30873181,87.35362998,72.34042553,81.91489362,57.5
+tf_mobilenetv3_small_075.in1k,65.726,ImageNet 1k,CNN,56.41891892,83.95784543,61.70212766,78.72340426,45
