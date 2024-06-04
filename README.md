@@ -15,24 +15,21 @@ Visual perspective taking (VPT), the ability to accurately perceive and reason a
 <img src="docs/assets/examples.png" width=80%>
 
 ## Data Access
-We release the complete 3D-PC dataset 
+We release the complete 3D-PC dataset along with data splits for training and testing.
 #### Download full dataset
 https://connectomics.clps.brown.edu/tf_records/VPT/
-<details>
-<summary>Data Structure</summary>
+
+#### Dataset Content
+`train` and `test` contain images organized by categories. 
 ```
-.
+train/test
 |
-|
-|_train
-|
-|
-|_test
-|
-|
-|_perspective
-|
-|
-|_depth
+|_<category>
+|  |_<object>
+|    |_<setting>
+|      |_<*.png>
 ```
-</details>
+The corresponding labels are `train_perspective.csv`, `test_perspective.csv`, `train_depth.csv`, and `test_depth.csv`.
+
+
+
