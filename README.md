@@ -5,7 +5,7 @@
 _Drew Linsley, Peisen Zhou, Alekh Karkada, Akash Nagaraj, Gaurav Gaonkar, Francis E Lewis, Zygmunt Pizio, Thomas Serre_
 <p>Carney Institute for Brain Science, Brown University</p>
 
-### [Projectpage] · [Paper]
+### [Projectpage](https://serre-lab.github.io/VPT/) · [Paper]
 
 </div>
 
