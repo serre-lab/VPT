@@ -1,0 +1,9 @@
+[submodule "submodule/probe3d"]
+	path = submodule/probe3d
+	url = https://github.com/PPPayson/probe3d.git
+[submodule "submodule/pytorch-smoothgrad"]
+	path = submodule/pytorch-smoothgrad
+	url = https://github.com/PPPayson/pytorch-smoothgrad
+[submodule "submodule/Depth_Anything"]
+	path = submodule/Depth_Anything
+	url = https://github.com/PPPayson/Depth-Anything.git
