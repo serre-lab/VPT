@@ -2,8 +2,9 @@
 
 # Visual perspective taking in humans and machines
 
-_Drew Linsley, Peisen Zhou, Alekh Karkada, Akash Nagaraj, Gaurav Gaonkar, Francis E Lewis, Zygmunt Pizio, Thomas Serre_
-<p>Carney Institute for Brain Science, Brown University</p>
+_Drew Linsley<sup>1</sup>, Peisen Zhou<sup>1</sup>, Alekh Karkada<sup>1</sup>, Akash Nagaraj<sup>1</sup>, Gaurav Gaonkar<sup>1</sup>, Francis E Lewis<sup>1</sup>, Zygmunt Pizio<sup>2</sup>, Thomas Serre<sup>1</sup>_
+<p><sup>1</sup>Carney Institute for Brain Science, Brown University, Providence, RI.</p>
+<p><sup>2</sup>Department of Cognitive Sciences, University of California-Irvine, Irvine, CA.</sup></p>
 
 ### [Projectpage](https://serre-lab.github.io/VPT/) · [Paper]
 
