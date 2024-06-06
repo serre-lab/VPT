@@ -21,16 +21,42 @@ We release the complete 3D-PC dataset along with data splits for training and te
 https://connectomics.clps.brown.edu/tf_records/VPT/
 
 #### Dataset Content
-`train` and `test` contain images organized by categories. 
+`train` contains all training images organized by categories. 
 ```
-train/test
+train
 |
 |_<category>
 |  |_<object>
 |    |_<setting>
 |      |_<*.png>
 ```
-The corresponding labels are `train_perspective.csv`, `test_perspective.csv`, `train_depth.csv`, and `test_depth.csv`.
+The corresponding labels are `train_perspective.csv` and `depth_perspective.csv`. We also provide `train_perspective_balanced.csv` and `depth_perspective_balanced.csv`, where the numbers of positive and negative samples are equal.
+
+`perspective` and `depth` contain all data splits for 'VPT' and 'depth order' tasks.
+```
+perspective/depth
+|
+|_<split>
+|  |_<category> 0/1
+|    |_<*.png>
+```
+
+## TIMM Evaluation
+To linear probe a timm model
+```
+python run_linear_probe.py --task <task> --data_dir <data_folder>/<task>/ --model_name <model_name>
+```
+
+To fine-tune a timm model
+```
+python run_finetune.py --task <task> --data_dir <data_folder>/<task>/ --model_name <model_name>
+```
+
+`data_folder`: Root directory for the dataset
+
+`task`: Either `perspective` or `depth`
+
+`model_name`: TIMM model name
 
 
 
