@@ -2,10 +2,11 @@
 
 # Visual perspective taking in humans and machines
 
-_Drew Linsley, Peisen Zhou, Alekh Karkada, Akash Nagaraj, Gaurav Gaonkar, Francis E Lewis, Zygmunt Pizio, Thomas Serre_
-<p>Carney Institute for Brain Science, Brown University</p>
+_Drew Linsley<sup>1</sup>, Peisen Zhou<sup>1</sup>, Alekh Karkada<sup>1</sup>, Akash Nagaraj<sup>1</sup>, Gaurav Gaonkar<sup>1</sup>, Francis E Lewis<sup>1</sup>, Zygmunt Pizio<sup>2</sup>, Thomas Serre<sup>1</sup>_
+<p><sup>1</sup>Carney Institute for Brain Science, Brown University, Providence, RI.</p>
+<p><sup>2</sup>Department of Cognitive Sciences, University of California-Irvine, Irvine, CA.</sup></p>
 
-### [Projectpage](https://serre-lab.github.io/VPT/) · [Paper]
+### [Project Page](https://serre-lab.github.io/VPT/) · [Paper](https://arxiv.org/abs/2406.04138)
 
 </div>
 
@@ -20,16 +21,42 @@ We release the complete 3D-PC dataset along with data splits for training and te
 https://connectomics.clps.brown.edu/tf_records/VPT/
 
 #### Dataset Content
-`train` and `test` contain images organized by categories. 
+`train` contains all training images organized by categories. 
 ```
-train/test
+train
 |
 |_<category>
 |  |_<object>
 |    |_<setting>
 |      |_<*.png>
 ```
-The corresponding labels are `train_perspective.csv`, `test_perspective.csv`, `train_depth.csv`, and `test_depth.csv`.
+The corresponding labels are `train_perspective.csv` and `depth_perspective.csv`. We also provide `train_perspective_balanced.csv` and `depth_perspective_balanced.csv`, where the numbers of positive and negative samples are equal.
+
+`perspective` and `depth` contain all data splits for 'VPT' and 'depth order' tasks.
+```
+perspective/depth
+|
+|_<split>
+|  |_<category> 0/1
+|    |_<*.png>
+```
+
+## TIMM Evaluation
+To linear probe a timm model
+```
+python run_linear_probe.py --task <task> --data_dir <data_folder>/<task>/ --model_name <model_name>
+```
+
+To fine-tune a timm model
+```
+python run_finetune.py --task <task> --data_dir <data_folder>/<task>/ --model_name <model_name>
+```
+
+`data_folder`: Root directory for the dataset
+
+`task`: Either `perspective` or `depth`
+
+`model_name`: TIMM model name
 
 
 
