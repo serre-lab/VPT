@@ -403,16 +403,18 @@
   <h1>Data</h1>
 
 <h2 id="data-access">Data Access<a class="headerlink" href="#data-access" title="Permanent link">&para;</a></h2>
-<h4 id="hugging-face">Hugging Face<a class="headerlink" href="#hugging-face" title="Permanent link">&para;</a></h4>
+<h3 id="hugging-face">Hugging Face<a class="headerlink" href="#hugging-face" title="Permanent link">&para;</a></h3>
 <p>We host data for all three tasks: VPT-basic, VPT-strategy, and depth order on Hugging Face.</p>
-<p>https://huggingface.co/datasets/pzhou10/3D-PC
+<p><a href=https://huggingface.co/datasets/pzhou10/3D-PC><u>Hugging Face Repo</u></a>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">datasets</span> <span class="kn">import</span> <span class="n">load_dataset</span>
 <span class="c1"># config_name: one of [&quot;vpt-basic&quot;, &quot;vpt-strategy&quot;, &quot;depth&quot;]</span>
 <span class="n">dataset</span> <span class="o">=</span> <span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;pzhou10/3D-PC&quot;</span><span class="p">,</span> <span class="s2">&quot;vpt-basic&quot;</span><span class="p">)</span>
 </code></pre></div></p>
-<h4 id="download-the-full-dataset">Download the full dataset<a class="headerlink" href="#download-the-full-dataset" title="Permanent link">&para;</a></h4>
+<hr>
+
+<h3 id="download-the-full-dataset">Download the full dataset<a class="headerlink" href="#download-the-full-dataset" title="Permanent link">&para;</a></h3>
 <p>We also release the complete 3D-PC dataset along with data splits for training and testing.</p>
-<p>https://connectomics.clps.brown.edu/tf_records/VPT/</p>
+<p><a href=https://connectomics.clps.brown.edu/tf_records/VPT><u>Download Data</u></a></p>
 <h4 id="dataset-content">Dataset Content<a class="headerlink" href="#dataset-content" title="Permanent link">&para;</a></h4>
 <p><code>train</code> contains all training images organized by categories. 
 <div class="highlight"><pre><span></span><code>train

@@ -401,13 +401,15 @@
   <h1>Benchmark</h1>
 
 <h2 id="model-evaluation-and-results">Model Evaluation and Results<a class="headerlink" href="#model-evaluation-and-results" title="Permanent link">&para;</a></h2>
-<p>We evaluated 327 different DNNs on 3D-PC by both linear probing and fine-tuning models on VPT-basic and depth order tasks.</p>
-<h4 id="linear-probe-results">Linear Probe Results<a class="headerlink" href="#linear-probe-results" title="Permanent link">&para;</a></h4>
+<p>We evaluated 327 different DNNs on 3D-PC by both linear probing and fine-tuning models on VPT-basic and depth order tasks.
+ <hr>
+</p>
+<h3 id="linear-probe-results">Linear Probe Results<a class="headerlink" href="#linear-probe-results" title="Permanent link">&para;</a></h3>
 <figure>
     <img src="../assets/lp_results.png" width="95%" align="center">
 </figure>
 <p><b>DNN performance on the depth order and VPT-basic tasks in the 3D-PC after linear probing or prompting.</b> <b>(A, B)</b> DNNs are significantly more accurate at depth order than VPT-basic. Human confidence intervals are S.E.M. and ***: p &lt; 0.001. <b>(C, D)</b> DNN accuracy for depth order and VPT-basic strongly correlates with object classification accuracy on ImageNet. Dashed lines are the mean of label-permuted human noise floors.</p>
-<h4 id="fine-tune-results">Fine-tune Results<a class="headerlink" href="#fine-tune-results" title="Permanent link">&para;</a></h4>
+<h3 id="fine-tune-results">Fine-tune Results<a class="headerlink" href="#fine-tune-results" title="Permanent link">&para;</a></h3>
 <figure>
     <img src="../assets/ft_results.png" width="95%" align="center">
 </figure>
@@ -418,7 +420,9 @@ fine-tuning, there is still a significant difference in model performance on dep
 tasks, p &lt; 0.001 . <b>(C, D)</b> DNN accuracy on both tasks after fine-tuning correlates with ImageNet
 object classification accuracy. Human confidence intervals are S.E.M. and ***: p &lt; 0.001. Dashed
 lines are the mean of label-permuted human noise floors.</p>
-<h4 id="timm-evaluation">TIMM Evaluation<a class="headerlink" href="#timm-evaluation" title="Permanent link">&para;</a></h4>
+<hr>
+
+<h3 id="timm-evaluation">TIMM Evaluation<a class="headerlink" href="#timm-evaluation" title="Permanent link">&para;</a></h3>
 <p>To linear probe a timm model
 <div class="highlight"><pre><span></span><code>python run_linear_probe.py --task &lt;task&gt; --data_dir &lt;data_folder&gt;/&lt;task&gt;/ --model_name &lt;model_name&gt;
 </code></pre></div></p>
