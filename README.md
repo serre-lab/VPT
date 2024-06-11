@@ -4,7 +4,7 @@
 
 _Drew Linsley<sup>1</sup>, Peisen Zhou<sup>1</sup>, Alekh Karkada<sup>1</sup>, Akash Nagaraj<sup>1</sup>, Gaurav Gaonkar<sup>1</sup>, Francis E Lewis<sup>1</sup>, Zygmunt Pizio<sup>2</sup>, Thomas Serre<sup>1</sup>_
 <p><sup>1</sup>Carney Institute for Brain Science, Brown University, Providence, RI.</p>
-<p><sup>2</sup>Department of Cognitive Sciences, University of California-Irvine, Irvine, CA.</sup></p>
+<p><sup>2</sup>Department of Cognitive Sciences, University of California-Irvine, Irvine, CA.</p>
 
 ### [Project Page](https://serre-lab.github.io/VPT/) · [Paper](https://arxiv.org/abs/2406.04138) · [Data](https://huggingface.co/datasets/pzhou10/3D-PC)
 
