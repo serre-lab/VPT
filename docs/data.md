@@ -1,17 +1,20 @@
 ## Data Access
-#### Hugging Face
+### Hugging Face
 We host data for all three tasks: VPT-basic, VPT-strategy, and depth order on Hugging Face.
 
-https://huggingface.co/datasets/pzhou10/3D-PC
+<a href=https://huggingface.co/datasets/pzhou10/3D-PC><u>Hugging Face Repo</u></a>
 ```python
 from datasets import load_dataset
 # config_name: one of ["vpt-basic", "vpt-strategy", "depth"]
 dataset = load_dataset("pzhou10/3D-PC", "vpt-basic")
 ```
-#### Download the full dataset
+ 
+ <hr>
+ 
+### Download the full dataset
 We also release the complete 3D-PC dataset along with data splits for training and testing.
 
-https://connectomics.clps.brown.edu/tf_records/VPT/
+<a href=https://connectomics.clps.brown.edu/tf_records/VPT><u>Download Data</u></a>
 
 #### Dataset Content
 `train` contains all training images organized by categories. 
