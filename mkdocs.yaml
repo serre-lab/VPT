@@ -2,8 +2,8 @@ site_name: Visual Perspective Taking
 
 nav:
   - Home: index.md
-  - Data: index.md
-  - Benchmark: index.md
+  - Data: data.md
+  - Benchmark: benchmark.md
 
 theme:
   name: "material"
