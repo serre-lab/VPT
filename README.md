@@ -6,7 +6,7 @@ _Drew Linsley<sup>1</sup>, Peisen Zhou<sup>1</sup>, Alekh Karkada<sup>1</sup>, A
 <p><sup>1</sup>Carney Institute for Brain Science, Brown University, Providence, RI.</p>
 <p><sup>2</sup>Department of Cognitive Sciences, University of California-Irvine, Irvine, CA.</sup></p>
 
-### [Project Page](https://serre-lab.github.io/VPT/) · [Paper](https://arxiv.org/abs/2406.04138)
+### [Project Page](https://serre-lab.github.io/VPT/) · [Paper](https://arxiv.org/abs/2406.04138) · [Data](https://huggingface.co/datasets/pzhou10/3D-PC)
 
 </div>
 
@@ -16,8 +16,18 @@ Visual perspective taking (VPT), the ability to accurately perceive and reason a
 <img src="docs/assets/examples.png" width=80%>
 
 ## Data Access
+#### Hugging Face
+We release data for all three tasks: VPT-basic, VPT-strategy, and depth order on Hugging Face.
+
+https://huggingface.co/datasets/pzhou10/3D-PC
+```python
+from datasets import load_dataset
+# config_name: one of ["vpt-basic", "vpt-strategy", "depth"]
+dataset = load_dataset("pzhou10/3D-PC", "vpt-basic")
+```
+#### Download the full dataset
 We release the complete 3D-PC dataset along with data splits for training and testing.
-#### Download full dataset
+
 https://connectomics.clps.brown.edu/tf_records/VPT/
 
 #### Dataset Content
@@ -58,5 +68,15 @@ python run_finetune.py --task <task> --data_dir <data_folder>/<task>/ --model_na
 
 `model_name`: TIMM model name
 
-
+## Citation
+```
+@misc{linsley20243dpc,
+      title={The 3D-PC: a benchmark for visual perspective taking in humans and machines}, 
+      author={Drew Linsley and Peisen Zhou and Alekh Karkada Ashok and Akash Nagaraj and Gaurav Gaonkar and Francis E Lewis and Zygmunt Pizlo and Thomas Serre},
+      year={2024},
+      eprint={2406.04138},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
