@@ -1,10 +1,9 @@
-
 <div style="text-align:center" class="latex-font">
     <h1 style="text-align: center; font-weight: bold; color: inherit; margin-bottom: 0.2em"> Visual perspective taking in humans and machines </h1>
 
     <span class="author" style="font-weight: bold"> Drew Linsley*<sup>1</sup>, Peisen Zhou*<sup>1</sup>, Alekh Karkada*<sup>1</sup>, Akash Nagaraj<sup>1</sup>, <br> Gaurav Gaonkar<sup>1</sup>, Francis E Lewis<sup>1</sup>, Zygmunt Pizlo<sup>2</sup>, Thomas Serre<sup>1</sup></span> <br>
     <span class="affiliations"> <sup>1</sup>Carney Institute for Brain Science, Brown University, Providence, RI 02912 </span> <br>
-    <span class="affiliations> <sup>2</sup>Department of Cognitive Sciences, University of California-Irvine, Irvine, CA. </span> <br>
+    <span class="affiliations"> <sup>2</sup>Department of Cognitive Sciences, University of California-Irvine, Irvine, CA. </span> <br>
     <span class="mono"> drew_linsley@brown.edu </span>
 </div>
 
