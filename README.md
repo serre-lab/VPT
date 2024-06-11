@@ -6,7 +6,7 @@ _Drew Linsley<sup>1</sup>, Peisen Zhou<sup>1</sup>, Alekh Karkada<sup>1</sup>, A
 <p><sup>1</sup>Carney Institute for Brain Science, Brown University, Providence, RI.</p>
 <p><sup>2</sup>Department of Cognitive Sciences, University of California-Irvine, Irvine, CA.</sup></p>
 
-### [Projectpage](https://serre-lab.github.io/VPT/) · [Paper](https://arxiv.org/abs/2406.04138)
+### [Project Page](https://serre-lab.github.io/VPT/) · [Paper](https://arxiv.org/abs/2406.04138)
 
 </div>
 
