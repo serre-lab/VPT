@@ -1,3 +1,12 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT2TTGQRXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HT2TTGQRXW');
+</script>
 ## Data Access
 ### Hugging Face
 We host data for all three tasks: VPT-basic, VPT-strategy, and depth order on Hugging Face.
