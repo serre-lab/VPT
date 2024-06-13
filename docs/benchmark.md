@@ -1,3 +1,12 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT2TTGQRXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HT2TTGQRXW');
+</script>
 ## Model Evaluation and Results
 We evaluated 327 different DNNs on 3D-PC by both linear probing and fine-tuning models on VPT-basic and depth order tasks.
  <hr>
