@@ -1,5 +1,9 @@
 site_name: Visual Perspective Taking
 
+google_analytics:
+  - G-HT2TTGQRXW
+  - auto
+  
 nav:
   - Home: index.md
   - Data: data.md
