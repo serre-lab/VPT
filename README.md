@@ -19,7 +19,7 @@ Visual perspective taking (VPT), the ability to accurately perceive and reason a
 #### Hugging Face
 We release data for all three tasks: VPT-basic, VPT-strategy, and depth order on Hugging Face.
 
-https://huggingface.co/datasets/pzhou10/3D-PC
+https://huggingface.co/datasets/3D-PC/3D-PC
 ```python
 from datasets import load_dataset
 # config_name: one of ["vpt-basic", "vpt-strategy", "depth"]
