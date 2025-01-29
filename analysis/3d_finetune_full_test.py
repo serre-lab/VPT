@@ -83,7 +83,6 @@ task_performance = task_performance[task_performance.imagenet_accuracy > 0]
 
 print("Depth pearson test: {}".format(pearsonr(task_performance["ImageNet Accuracy"], task_performance["Depth Perception Accuracy"])))
 print("VPT pearson test: {}".format(pearsonr(task_performance["ImageNet Accuracy"], task_performance["VPT Accuracy"])))
-import pdb;pdb.set_trace()
 
 # 0. Create color key
 training = model_performance.training_data == "ImageNet 1k"
