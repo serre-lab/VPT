@@ -70,13 +70,10 @@ python run_finetune.py --task <task> --data_dir <data_folder>/<task>/ --model_na
 
 ## Citation
 ```
-@misc{linsley20243dpc,
+@ARTICLE{linsley20243dpc,
       title={The 3D-PC: a benchmark for visual perspective taking in humans and machines}, 
-      author={Drew Linsley and Peisen Zhou and Alekh Karkada Ashok and Akash Nagaraj and Gaurav Gaonkar and Francis E Lewis and Zygmunt Pizlo and Thomas Serre},
-      year={2024},
-      eprint={2406.04138},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      author={Drew Linsley* and Peisen Zhou* and Alekh Karkada Ashok and Akash Nagaraj and Gaurav Gaonkar and Francis E Lewis and Zygmunt Pizlo and Thomas Serre},
+      journal={International Conference on Learning Representations},
+      year={2025},
 }
 ```
-
