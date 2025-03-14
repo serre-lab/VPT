@@ -16,6 +16,12 @@ Visual perspective taking (VPT), the ability to accurately perceive and reason a
 <img src="docs/assets/examples.png" width=80%>
 
 ## Data Access
+
+#### Download the full dataset
+ We release the complete 3D-PC dataset along with data splits for training and testing.
+ 
+ https://connectomics.clps.brown.edu/tf_records/VPT/
+ 
 #### Hugging Face
 We release data for all three tasks: VPT-basic, VPT-strategy, and depth order on Hugging Face.
 
