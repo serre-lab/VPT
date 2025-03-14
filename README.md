@@ -25,10 +25,6 @@ from datasets import load_dataset
 # config_name: one of ["vpt-basic", "vpt-strategy", "depth"]
 dataset = load_dataset("pzhou10/3D-PC", "vpt-basic")
 ```
-#### Download the full dataset
-We release the complete 3D-PC dataset along with data splits for training and testing.
-
-https://connectomics.clps.brown.edu/tf_records/VPT/
 
 #### Dataset Content
 `train` contains all training images organized by categories. 
