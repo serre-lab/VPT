@@ -1,6 +1,6 @@
 <div align="center">
 
-# Visual perspective taking in humans and machines
+# The 3D-PC: a benchmark for visual perspective taking in humans and machines
 
 _Drew Linsley<sup>1</sup>, Peisen Zhou<sup>1</sup>, Alekh Karkada<sup>1</sup>, Akash Nagaraj<sup>1</sup>, Gaurav Gaonkar<sup>1</sup>, Francis E Lewis<sup>1</sup>, Zygmunt Pizio<sup>2</sup>, Thomas Serre<sup>1</sup>_
 <p><sup>1</sup>Carney Institute for Brain Science, Brown University, Providence, RI.</p>
