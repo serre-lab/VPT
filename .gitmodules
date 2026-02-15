@@ -7,3 +7,6 @@
 [submodule "submodule/Depth_Anything"]
 	path = submodule/Depth_Anything
 	url = https://github.com/PPPayson/Depth-Anything.git
+[submodule "submodule/ChronoDepth"]
+	path = submodule/ChronoDepth
+	url = git@github.com:briankim945/ChronoDepth.git

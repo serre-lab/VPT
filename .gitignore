@@ -165,3 +165,9 @@ model_cache/
 batch_logs/
 *_ckpts/
 scripts/
+
+# Analysis results
+analysis/
+
+# Logs
+logs/

@@ -47,7 +47,7 @@ def get_args_parser():
                         help="specify warmup epochs, usually <= 5")
     parser.add_argument("--num_classes", required=False, type = int, default = 1, help="specify number of classes of the classification head")
     parser.add_argument("--dropout_rate", required=False, type = float, default=0.3, help="Dropout rate for TIMM model")
-    parser.add_argument("--task", required=False, default='perspective', choices=['perspective', 'depth'])
+    parser.add_argument("--task", required=False, default='perspective')
     parser.add_argument("--min_lr", required=False, default=1e-6, type=float, help="Minimum learning rate")
     parser.add_argument("--dpt_encoder", required=False, default='vitl', choices=['vits', 'vitb', 'vitl'])
     parser.add_argument("--not_pretrained", default=False, action="store_true")
@@ -55,6 +55,9 @@ def get_args_parser():
     parser.add_argument("--exp", default=False, action="store_true")
     parser.add_argument('--exp_dir', required=False, type=str)
     parser.add_argument("--ckpt_path", type=str)
+    parser.add_argument('--split', required=False, type=str, default="all")
+    parser.add_argument("--early_stop", default=False, action="store_true")
+    parser.add_argument("--wandb_project", required=False, type = str, default='gs-perception-linear-probe', help='W&B project name')
     return parser
 
 def get_transform_wo_crop(data_config):

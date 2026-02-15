@@ -13,6 +13,7 @@ import torchvision.datasets as datasets
 from src.perspective_data import PerspectiveDataset, FeaturesDataset
 from src.models import LinearModel, LinearModelMulti
 from src.utils import binary_accuracy, accuracy, CosineAnnealingWithWarmup, get_args_parser, get_transform_wo_crop
+from src.early_stopper import EarlyStopper
 import json
 import csv
 
@@ -45,6 +46,7 @@ def train_linear_probe(model, train_loader, test_loader, val_loader, human_loade
     best_acc_test = 0
     best_acc_train = 0
     best_acc_human = 0
+    early_stopper = EarlyStopper(patience=3, min_delta=10)
     for epoch in tqdm(range(args.epochs)):
         model.train()
         epoch_acc = []
@@ -86,6 +88,8 @@ def train_linear_probe(model, train_loader, test_loader, val_loader, human_loade
             wandb.log({'train_acc':train_acc, 'train_loss':sum(epoch_loss)/float(len(epoch_loss)),
                     'val_acc':val_acc, 'val_loss':val_loss, 'human_acc':human_acc, 'human_loss':human_loss, 'test_acc':test_acc,
                     'test_loss':test_loss})
+        if args.early_stop and early_stopper.early_stop(val_loss):             
+            break
     return best_acc_train, best_acc_test, best_acc_val, best_acc_human
     
 def evaluate_linear_probe(model, data_loader, criterion, device, return_record, args):
@@ -156,7 +160,7 @@ def run_extract_features(args):
     
 def run_linear_probe(args):
     if args.wandb:
-        wandb_run = wandb.init(project='gs-perception-linear-probe', 
+        wandb_run = wandb.init(project=args.wandb_project, 
                             config={                   
                                 "learning_rate": args.learning_rate,
                                 "architecture": args.model_name,
